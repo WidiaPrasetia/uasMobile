@@ -9,7 +9,7 @@ class Info extends StatelessWidget {
           children: <Widget>[
             new Text("Info", style: new TextStyle(fontSize: 30.0),),
             new Padding(padding: new EdgeInsets.all(20.0),),
-            new Icon(Icons.info, size: 90.0)
+            new Image.asset("img/info.png", width: 200.0,)
           ]
         ),
       ),

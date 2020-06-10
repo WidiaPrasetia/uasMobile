@@ -35,11 +35,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
+         actions: <Widget>[
+          new Tab(icon: Icon(Icons.search)),
+        ],
         backgroundColor: Colors.green[200],
         title: new Text("Yadnya App"),
-        actions: <Widget>[
-          new Tab(icon: Icon(Icons.search))
-        ],
+        // actions: <Widget>[
+        //   new Tab(icon: Icon(Icons.search))
+        // ],
         bottom: new TabBar(
           controller: controller,
           tabs: <Widget>[

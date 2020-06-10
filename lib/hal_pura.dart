@@ -9,7 +9,7 @@ class Pura extends StatelessWidget {
           children: <Widget>[
             new Text("Pura", style: new TextStyle(fontSize: 30.0),),
             new Padding(padding: new EdgeInsets.all(20.0),),
-            new Icon(Icons.people, size: 90.0)
+            new Image.asset("img/pura.jpg", width: 200.0,)
           ]
         ),
       ),
