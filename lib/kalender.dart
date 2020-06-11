@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import './main.dart' as HomeUtama;
 
-class Info extends StatelessWidget {
+class Kalender extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Text("Info"),
+        backgroundColor: Colors.green[400],
+        title: Text("Kalender"),
       ),
-      body: new Container(
+      body:  new Container(
       child: new Center(
         child: new Column(children: <Widget>[
           new Text(
@@ -25,7 +25,8 @@ class Info extends StatelessWidget {
           )
         ]),
       ),
-    ),
+    ) 
     );
+    
   }
 }

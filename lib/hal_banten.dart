@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './main.dart' as HomeUtama;
 
 class Banten extends StatelessWidget {
   @override
