@@ -37,6 +37,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       appBar: new AppBar(
         actions: <Widget>[
           new IconButton(
+               padding: new EdgeInsets.all(23.0),
               icon: new Icon(Icons.more_vert),
               onPressed: () {
                 showDialog(
