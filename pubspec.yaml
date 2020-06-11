@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  flutter_calendar: ^0.0.9
   flutter:
     sdk: flutter
 
@@ -46,10 +47,13 @@ flutter:
 
 
   assets:
+    - img/masceti.jpeg
+    - img/lempuyang.jpg
     - img/banten.jpg
     - img/pura.jpg
     - img/info.png
-    - yadnya_icon.svg
+    - undiknas.png
+    - img/besakih.jpg
 
     
 

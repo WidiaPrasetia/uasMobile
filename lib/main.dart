@@ -86,15 +86,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     fontWeight: FontWeight.bold,
                     fontSize: 40,
                     foreground: Paint()
-                      ..style = PaintingStyle.stroke
-                      ..strokeWidth = 5
-                      ..color = Colors.green[700]),
+                    ..style = PaintingStyle.stroke
+                    ..strokeWidth = 100
+                    ..color = Colors.teal[900]
+                     ),
               ),
               decoration: BoxDecoration(
+                border: Border.all(width: 2,
+                color: Colors.green[600]),
                 color: Colors.green[400],
               ),
+  
             ),
             ListTile(
+              leading: Icon(Icons.home),
               title: Text('Home'),
               onTap: () {
                 Navigator.pop(context);
@@ -102,18 +107,30 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               },
             ),
             ListTile(
+              leading: Icon(Icons.shopping_cart),
               title: Text('Belanja'),
               onTap: () {
                 // Navigator.push(context, MaterialPageRoute(builder: (context) => kalender.Kalender()));
               },
             ),
             ListTile(
+              leading: Icon(Icons.calendar_today),
               title: Text('Kalender'),
               onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => kalender.Kalender()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.calendar_today),
+              title: Text('Informasi'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => info.Info()));
               },
             ),
           ],
