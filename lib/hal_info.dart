@@ -1,6 +1,13 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:uas_app/kalender.dart';
-import './main.dart' as HomeUtama;
+import 'package:google_fonts/google_fonts.dart';
+import './hal_banten.dart' as banten;
+import './hal_pura.dart' as pura;
+import './kalender.dart' as kalender;
+import './hal_belanja.dart' as belanja;
+import './test.dart' as hanyaTest;
+import './main.dart' as utama;
 
 class Info extends StatelessWidget {
   @override
@@ -10,6 +17,7 @@ class Info extends StatelessWidget {
         backgroundColor: Colors.green,
         title: Text("Info"),
       ),
+      
       body: 
       new ListView(
       children: <Widget>[
@@ -35,7 +43,7 @@ class Info extends StatelessWidget {
          title: new Text("Info Piodalan"), 
          subtitle: new Text("Info piodalan seputaran Pura di Bali"),
          onTap: (){
-           Navigator.push(context, MaterialPageRoute(builder: (context) => Kalender()));
+           Navigator.push(context, MaterialPageRoute(builder: (context) => kalender.Kalender()));
          }, 
         ),
       ], 

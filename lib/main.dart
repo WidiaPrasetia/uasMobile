@@ -24,7 +24,6 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
-  String teks="";
   TabController controller;
   @override
   void initState() {
@@ -134,14 +133,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     MaterialPageRoute(builder: (context) => hanyaTest.Test()));
               },
             ),
-            ListTile(
-              leading: Icon(Icons.card_giftcard),
-              title: Text('Seputar Hari'),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => info.Info()));
-              },
-            ),
           ],
         ),
       ),
@@ -168,7 +159,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               ),
               new Tab(
                 icon: new Icon(Icons.info),
-                text: "Info Yadnya",
+                text: "Info",
               ),
             ],
           )),

@@ -1,5 +1,13 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import './main.dart' as HomeUtama;
+import 'package:google_fonts/google_fonts.dart';
+import './hal_banten.dart' as banten;
+import './hal_pura.dart' as pura;
+import './kalender.dart' as kalender;
+import './hal_belanja.dart' as belanja;
+import './test.dart' as hanyaTest;
+import './main.dart' as utama;
 
 
 void main(){
@@ -13,6 +21,7 @@ class Banten extends StatelessWidget {
       backgroundColor: Colors.green,
       title: new Text("Daftar Banten",), 
      ),
+     
 
      body: new ListView(
       children: <Widget>[
