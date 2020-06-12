@@ -6,42 +6,72 @@ class Pura extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-       backgroundColor: Colors.green[400],
-       title: new Text("Daftar Pura di Bali"), 
+        backgroundColor: Colors.green,
+        title: new Text("Daftar Pura di Bali"),
       ),
       body: new ListView(
-       children: <Widget>[
-         new ListPura(gambar: "img/lempuyang.jpg", judul: "Pura Besakih", ),
-         new ListPura(gambar: "img/masceti.jpeg", judul: "Pura Masceti", ),
-         new ListPura(gambar: "img/besakih.jpg", judul: "Pura Besakih", ),
-       ], 
+        children: <Widget>[
+          new ListPura(
+            gambar: "img/lempuyang.jpg",
+            judul: "Pura Lempuyang",
+            deskripsi: "Pura Lempuyang terletak di Kabupaten Karangasem",
+          ),
+          new ListPura(
+            gambar: "img/masceti.jpeg",
+            judul: "Pura Masceti",
+            deskripsi: "Pura Masceti terletak di Kabupaten Gianyar",
+          ),
+          new ListPura(
+            gambar: "img/besakih.jpg",
+            judul: "Pura Besakih",
+            deskripsi: "Pura Besakih terletak di Kabupaten Karangasem",
+          ),
+        ],
       ),
     );
   }
 }
 
 class ListPura extends StatelessWidget {
-  ListPura({this.gambar, this.judul});
-    final String gambar;
-    final String judul;
+  ListPura({
+    this.gambar,
+    this.judul,
+    this.deskripsi
+  });
+  final String gambar;
+  final String judul;
+  final String deskripsi;
 
   @override
   Widget build(BuildContext context) {
-
     return new Container(
-           padding: new EdgeInsets.all(25.0),
-          child: new Center(
-           child: new Column(
-            children: <Widget>[
-          new Image.asset(
-            gambar,
-            width: 200.0,
-          ),
-          new Text(judul,
-          style: new TextStyle(fontSize: 20.0),)
-        ],
-           ), 
-          ), 
+      padding: new EdgeInsets.all(25.0),
+      child: new Center(
+        child: new Row(
+          children: <Widget>[
+            new Image.asset(
+              gambar,
+              width: 75.0,
+            ),
+            new Container(
+              padding: EdgeInsets.all(10.0),
+              child: new Center(
+                  child: new Column(
+                children: <Widget>[
+                  new Text(
+                    judul,
+                    style: new TextStyle(fontSize: 20.0),
+                  ),
+                  new Text(
+                    deskripsi,
+                    style: new TextStyle(fontSize: 15.0, color: Colors.green),
+                  )
+                ],
+              )),
+            )
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:uas_app/kalender.dart';
+import './main.dart' as HomeUtama;
 
 class Info extends StatelessWidget {
   @override
@@ -14,6 +16,7 @@ class Info extends StatelessWidget {
         new ListTile(
          leading: new Icon(Icons.colorize),
          title: new Text("Info Hari Raya"),
+         subtitle: new Text("Info seputar Hari Raya Hindu"),
          onTap: (){
            Navigator.canPop(context);
          }, 
@@ -21,6 +24,8 @@ class Info extends StatelessWidget {
         new ListTile(
          leading: new Icon(Icons.thumb_up),
          title: new Text("Info Hari Baik(Dewasa Ayu)"),
+         subtitle: new Text("Menentukan hari baik untuk memulai suatu kegiatan"),
+        //  dense: true,
          onTap: (){
            Navigator.canPop(context);
          },  
@@ -28,8 +33,9 @@ class Info extends StatelessWidget {
         new ListTile(
          leading: new Icon(Icons.notification_important),
          title: new Text("Info Piodalan"), 
+         subtitle: new Text("Info piodalan seputaran Pura di Bali"),
          onTap: (){
-           Navigator.canPop(context);
+           Navigator.push(context, MaterialPageRoute(builder: (context) => Kalender()));
          }, 
         ),
       ], 

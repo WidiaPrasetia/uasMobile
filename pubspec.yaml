@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  google_fonts: ^1.1.0
   flutter_calendar: ^0.0.9
   flutter:
     sdk: flutter
@@ -54,6 +55,8 @@ flutter:
     - img/info.png
     - undiknas.png
     - img/besakih.jpg
+    - img/lempuyang.png
+    - img/tanahlot.jpg
 
     
 
